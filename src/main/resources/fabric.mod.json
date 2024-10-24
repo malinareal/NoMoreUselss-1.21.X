@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "nomoreuseless",
+	"version": "${version}",
+	"name": "NoMoreUseless",
+	"description": "This mod makes useless stuff useful!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/nomoreuseless/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.malinareal.nmu.NoMoreUseless"
+		],
+		"client": [
+			"net.malinareal.nmu.NoMoreUselessClient"
+		],
+		"fabric-datagen": [
+			"net.malinareal.nmu.NoMoreUselessDataGenerator"
+		]
+	},
+	"mixins": [
+		"nomoreuseless.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
